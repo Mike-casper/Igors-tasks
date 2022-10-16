@@ -14,6 +14,7 @@ export const Automobile = (props: CarComponentType) => {
                 return (
                     <tr key={objectFromCarsArray.model}>
                         {/*<th>{objectFromCarsArray.}</th>*/}
+                        <th>{index+1}</th>
                         <th>{objectFromCarsArray.manufacturer}</th>
                         <th>{objectFromCarsArray.model}</th>
 
