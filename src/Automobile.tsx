@@ -12,7 +12,7 @@ export const Automobile = (props: CarComponentType) => {
         <table>
             {props.CarsArray.map((objectFromCarsArray, index: number) => {
                 return (
-                    <tr>
+                    <tr key={objectFromCarsArray.model}>
                         {/*<th>{objectFromCarsArray.}</th>*/}
                         <th>{objectFromCarsArray.manufacturer}</th>
                         <th>{objectFromCarsArray.model}</th>
